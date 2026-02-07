@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-right: 200px;
+        }
+        .main{
+            display: flex;
+            gap: 250px;
+        }
+
+        .login-container {
+            width: 360px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .logo {
+            color: #1877f2;
+            font-size: 46px;
+            font-weight: bold;
+            margin-left: 200px;
+            text-decoration: none;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .lg {
+        align-self: flex-start;
+        margin-top: 50px;
+        }
+
+        input {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #1877f2;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 14px;
+            background-color: #1877f2;
+            border: none;
+            border-radius: 6px;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .login-btn:hover {
+            background-color: #166fe5;
+        }
+
+        .forgot {
+            display: block;
+            margin: 16px 0;
+            color: #1877f2;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .forgot:hover {
+            text-decoration: underline;
+        }
+
+        .divider {
+            height: 1px;
+            background-color: #ddd;
+            margin: 20px 0;
+        }
+
+        .create-btn {
+            display: inline-block;
+            padding: 12px 16px;
+            background-color: #42b72a;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .create-btn:hover {
+            background-color: #36a420;
+        }
+
+        .page-link {
+            display: block;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #000000;
+            text-decoration: none;
+            text-align: center;
+        }
+        .pagee-link {
+            display: block;
+            margin-top: 5px;
+            margin-left: 200px;
+            font-size: 20px;
+            color: #000000;
+            text-decoration: none;
+        }
+        
+        
+    </style>
+</head>
+<body>
+<div class ="main">
+<div class="lg">
+    <a href="#" class="logo">facebook</a>
+    <a href="#" class="pagee-link">Facebook помогает вам всегда оставаться на связи и общатья со своими знакомыми.</a>
+
+</div>
+    <div class="wrapper">
+
+        <div class="login-container">
+            <form>
+                <input type="text" placeholder="Электронный адрес или номер телефона" required>
+                <input type="password" placeholder="Пароль" required>
+                <button class="login-btn" type="submit">Вход</button>
+            </form>
+
+            <a href="#" class="forgot">Забыли пароль?</a>
+            <div class="divider"></div>
+            <a href="#" class="create-btn">Создать новый аккаунт</a>
+        </div>
+
+        <a href="#" class="page-link"><b>Создать страницу</b> знаменитости, музыкальной группы 
+            или компании.</a>
+    </div>
+
+</div>
+</div>
+</body>
+
+</html>
+

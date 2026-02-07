@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>insta Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center; 
+            align-items: center;     
+        }
+
+        .main {
+            display: flex;
+            gap: 50px; 
+            align-items: center; 
+        }
+
+        .lg {
+            max-width: 300px;
+        }
+
+        .pagee-link {
+            font-size: 25px;
+            color: #000;
+            text-decoration: none;
+            display: block;
+        }
+
+        .gradient-text {
+            background: linear-gradient(
+            90deg,
+            #feda75,
+            #fa7e1e,
+            #d62976,
+            #962fbf,
+            #4f5bd5
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        }
+
+        .photo-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .foto-img {
+            width: 200px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .vertical-line {
+            width: 1px;
+            height: 250px; 
+            background-color: #dbdbdb;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .login-perviy {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            min-width: 350px;
+        }
+
+        .nadpis{
+            display: block;
+            margin-bottom: 14px;
+            font-size: 14px;
+            color: #000;
+            text-decoration: none;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 12px;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            font-size: 16px;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #000;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 9px;
+            background-color: rgba(24, 119, 242, 0.8);
+            border: none;
+            border-radius: 40px;
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .login-btn:hover {
+            background-color: #166fe5;
+        }
+
+        .forgot {
+            display: block;
+            margin: 12px 0;
+            font-size: 12px;
+            color: #000;
+            text-decoration: none;
+        }
+
+        .create-btn, .createe-btn {
+            display: inline-block;
+            padding: 9px 16px;
+            border-radius: 15px;
+            width: 100%;
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .create-btn {
+            background-color: #fff;
+            color: #000;
+            border: 1px solid #ddd;
+        }
+
+        .create-btn:hover {
+            background-color: #d1d1d1;
+        }
+
+        .createe-btn {
+            background-color: #fff;
+            color: #1e92ff;
+            border: 1px solid #1e92ff;
+        }
+
+        .createe-btn:hover {
+            background-color: #c8e3f4;
+        }
+
+        .meta-wrap {
+            display: flex;
+            align-items: center;
+            gap: 1px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .logo-img {
+            width: 50px;
+            margin-bottom: 100px;
+        }
+
+        .logo2-img {
+            width: 18px;
+            height: auto;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="main">
+
+    <div class="lg">
+        <img src="insta_logo.png" alt="Instagram" class="logo-img">
+        <a href="#" class="pagee-link">
+            Посмотрите, какими моментами из жизни поделились ваши 
+            <span class="gradient-text">близкие друзья.</span>
+        </a>
+    </div>
+
+    <div class="photo-block">
+        <img src="foto.png" alt="photo" class="foto-img">
+        <div class="vertical-line"></div>
+    </div>
+
+    <div class="wrapper">
+        <div class="login-perviy">
+            <a href="#" class="nadpis">Войти в Instagram</a>
+            <form>
+                <input type="text" placeholder="Имя пользователя, номер мобильного телефона или электронный адрес" required>
+                <input type="password" placeholder="Пароль" required>
+                <button class="login-btn" type="submit">Войти</button>
+            </form>
+            <a href="#" class="forgot">Забыли пароль?</a>
+            <a href="#" class="create-btn">Войти через Facebook</a>
+            <a href="#" class="createe-btn">Создать новый аккаунт</a>
+        </div>
+
+        <div class="meta-wrap">
+            <img src="meta_logo.png" alt="Meta" class="logo2-img">
+            <a href="#" class="page-link"><b>Meta</b></a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
