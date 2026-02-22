@@ -1,0 +1,5 @@
+<button *ngFor="let c of categories" (click)="selectCategory(c.id)">
+  {{ c.name }}
+</button>
+
+<app-product-list [categoryId]="selectedCategoryId"></app-product-list>

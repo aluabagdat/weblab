@@ -1,0 +1,18 @@
+<h1>Online Shop</h1>
+
+<div>
+  <button *ngFor="let c of categories"
+          (click)="selectCategory(c.id)">
+    {{ c.name }}
+  </button>
+</div>
+
+<div *ngIf="selectedCategoryId; else noCategory">
+  <app-product-list
+    [products]="filteredProducts">
+  </app-product-list>
+</div>
+
+<ng-template #noCategory>
+  <p>Please select a category</p>
+</ng-template>
