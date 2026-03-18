@@ -11,15 +11,18 @@ import { Product } from '../models/product.model';
 export class ProductItemComponent {
 
   @Input() product!: Product;
-  @Output() delete = new EventEmitter<Product>();
+  @Output() delete = new EventEmitter<number>();
 
   like() {
+  if (!this.product.liked) {
     this.product.likes++;
+    this.product.liked = true;
   }
+}
 
   remove() {
-    this.delete.emit(this.product);
-  }
+  this.delete.emit(this.product.id);
+}
 
   share() {
   const text = encodeURIComponent(`Посмотрите на товар: ${this.product.name}`);

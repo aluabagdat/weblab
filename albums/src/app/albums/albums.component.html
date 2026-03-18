@@ -1,0 +1,14 @@
+<div *ngIf="!loaded">Ждем данные...</div>
+
+<div *ngIf="loaded && albums.length > 0">
+  <ul>
+    <li *ngFor="let album of albums">
+      {{ album.title }}
+      <button (click)="deleteAlbum(album.id)">Удалить</button>
+    </li>
+  </ul>
+</div>
+
+<div *ngIf="loaded && albums.length === 0">
+  Нет альбомов для отображения
+</div>

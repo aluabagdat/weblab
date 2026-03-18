@@ -17,6 +17,7 @@ export const PRODUCTS: Product[] = [
     image: 'assets/iphone15.jpg',
     link: 'https://kaspi.kz/shop/p/apple-iphone-15-dual-sim-6-gb-256-gb-chernyi-114963265/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_search_accessories_travel_gear_desktop&gbraid=0AAAAAC7-v7gawJkCeT-bm-0hoR3Ll3zZr&gclid=CjwKCAiAzOXMBhASEiwAe14Sae45TGLkXiIJxM-vxR8AjC9Le7QL5oO1aE6dncRqcKiF0fjo-Pf1bxoC-_EQAvD_BwE',
     likes: 5,
+    liked: false,
     categoryId: 1,
     rating: 4
   },

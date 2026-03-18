@@ -19,6 +19,6 @@ export class ProductListComponent {
   }
 
   removeProduct(id: number) {
-    this.products = this.products.filter(p => p.id !== id);
-  }
+  this.products = this.products.filter(p => p.id !== id);
+}
 }

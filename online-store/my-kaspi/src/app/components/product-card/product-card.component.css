@@ -1,0 +1,31 @@
+.card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  background: white;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.card img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.price {
+  font-weight: bold;
+  color: green;
+}
+
+.rating {
+  margin: 5px 0;
+}
+
+button {
+  margin-right: 10px;
+  margin-top: 10px;
+}
